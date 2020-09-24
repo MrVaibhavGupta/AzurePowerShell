@@ -1,4 +1,4 @@
-nicParms = @{
+$nicParms = @{
     Name = 'LearningNIC'
     ResourceGroupName = "LearningRG"
     Location ="East US"
@@ -6,4 +6,4 @@ nicParms = @{
     PublicIpAddressId = $newPublicIP.Id
     NetworkSecurityGroupId = $newNetSG.Id
 }
-newNIC = New-AzNetworkInterface
+$newNIC = New-AzNetworkInterface

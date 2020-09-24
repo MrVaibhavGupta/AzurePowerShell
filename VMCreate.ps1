@@ -5,5 +5,6 @@ $vmParms = @{
     ImageName = 'Win2016Datacenter'
     Credential = $cred 
     OpenPorts = 3389
+    Add-AzureRmVMNetworkInterface -Id $newNIC.Id
 }
 $newVM1 = New-AzVM @vmParms
